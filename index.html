@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng Viên | AMIS Tuyển Dụng</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/icons.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Container chính -->
+    <div class="app-container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-decoration">
+                <img src="./assets/images/chrismas-decoration-header.svg" alt="Christmas Decoration">
+            </div>
+            <div class="header-left">
+                <div class="navbar-title">
+                    <div class="booking-title">
+                        <div class="navbar-icon icon-switch-app"></div>
+                    </div>
+                    <div class="navbar-logo-wrapper">
+                        <div class="navbar-logo-container">
+                            <i class="icon-default icon-logo"></i>
+                        </div>
+                        <div class="navbar-bg"></div>
+                    </div>
+                    <div class="title-name">Tuyển dụng</div>
+                </div>
+                <div class="header-search">
+                    <div class="icon icon-header-search"></div>
+                    <input type="text" class="search-input" placeholder="Tìm kiếm tin tuyển dụng, ứng viên, nhân tài...">
+                </div>
+            </div>
+            <div class="header-right display-flex align-items-center gap-lg">
+                <div class="header-website-link">
+                    <button class="btn-icon" title="Website tuyen dung">
+                        <i class="icon icon-website"></i>
+                    </button>
+                    <span class="website-text">Website tuyển dụng</span>
+                </div>
+                <button class="btn-icon" title="Phien ban va cap nhat">
+                    <i class="icon icon-notification-version"></i>
+                    <span class="badge">2</span>
+                </button>
+                <button class="btn-icon" title="Cua hang">
+                    <i class="icon icon-store"></i>
+                </button>
+                <button class="btn-icon" title="Moi ban be">
+                    <i class="icon icon-invite"></i>
+                </button>
+                <button class="btn-icon" title="Tin nhan">
+                    <i class="icon icon-message-box"></i>
+                </button>
+                <button class="btn-icon" title="Thong bao">
+                    <i class="icon icon-notification"></i>
+                    <span class="badge">1</span>
+                </button>
+                <button class="btn-icon" title="Tro giup">
+                    <i class="icon icon-help"></i>
+                </button>
+                <button class="btn-icon" title="Menu khac">
+                    <i class="icon icon-more-menu"></i>
+                </button>
+                <button class="btn-icon" title="Kien thuc">
+                    <i class="icon icon-knowledge-header"></i>
+                </button>
+                <div class="header-user">
+                    <img src="./assets/images/avatar-default.jpg" alt="User" class="user-avatar">
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content display-flex">
+
+            <!-- Sidebar -->
+            <aside class="sidebar" id="sidebar">
+                <nav class="sidebar-menu">
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-recruitment"></i>
+                        <span class="sidebar-text">Tin tuyển dụng</span>
+                    </a>
+                    <a href="#" class="sidebar-item active">
+                        <i class="icon icon-candidate"></i>
+                        <span class="sidebar-text">Ứng viên</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-schedule"></i>
+                        <span class="sidebar-text">Lịch</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-talent"></i>
+                        <span class="sidebar-text">Kho tiềm năng</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-campaign"></i>
+                        <span class="sidebar-text">Chiến dịch tuyển dụng</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-job"></i>
+                        <span class="sidebar-text">Công việc</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-marketing"></i>
+                        <span class="sidebar-text">aiMarketing</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-interview"></i>
+                        <span class="sidebar-text">Trao đổi với ứng viên</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-report"></i>
+                        <span class="sidebar-text">Báo cáo</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-settings"></i>
+                        <span class="sidebar-text">Thiết lập</span>
+                    </a>
+                    <a href="#" class="sidebar-item">
+                        <i class="icon icon-knowlege"></i>
+                        <span class="sidebar-text">Kiến thức hữu ích</span>
+                    </a>
+                </nav>
+                <div class="sidebar-decoration">
+                    <img src="./assets/images/christmas-decoration.svg" alt="Christmas Decoration">
+                </div>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="icon icon-arrow-left"></i>
+                    <span class="toggle-text">Thu gọn</span>
+                </button>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="content-area flex-1">
+
+                <!-- Page Header -->
+                <div class="page-header">
+                    <h1 class="page-title">Ứng viên</h1>
+                    <div class="header-actions">
+                        <button class="btn btn-primary" id="btnAddCandidate">
+                            <i class="icon icon-add"></i>
+                            <span>Thêm ứng viên</span>
+                        </button>
+                        <button class="btn btn-dropdown">
+                            <i class="icon icon-arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Filter & Search -->
+                <div class="filter-section">
+                    <div class="search-box">
+                        <i class="icon icon-ai-search-candidate"></i>
+                        <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm nhanh trong danh sách">
+                    </div>
+                    <div class="filter-actions display-flex gap-md">
+                        <button class="btn-delete-selected" id="btnDeleteSelected" style="display: none;" onclick="deleteSelectedCandidates()">
+                            <i class="icon icon-delete"></i>
+                            <span>Xóa</span>
+                        </button>
+                        <button class="btn-icon" title="Bộ lọc">
+                            <i class="icon icon-filter"></i>
+                        </button>
+                        <button class="btn-icon" title="Xuất khẩu" onclick="ExportModule.exportToExcel()">
+                            <i class="icon icon-export"></i>
+                        </button>
+                        <button class="btn-icon" title="Xem hoạt động" onclick="ActivityPopup.open()">
+                            <i class="icon icon-activity"></i>
+                        </button>
+                        <button class="btn-icon" title="Thiet lap hien thi" onclick="ColumnSettings.open()">
+                            <i class="icon icon-settings"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Table -->
+                <div class="table-wrapper">
+                    <table class="data-table" id="candidateTable">
+                        <thead>
+                            <tr>
+                                <th width="40"><input type="checkbox" id="checkAll" class="checkbox"></th>
+                                <th width="150">Số điện thoại</th>
+                                <th width="200">Nguồn ứng viên</th>
+                                <th width="250">Họ và tên</th>
+                                <th width="250">Email</th>
+                                <th width="200">Chiến dịch tuyển dụng</th>
+                                <th width="200">Vị trí tuyển dụng</th>
+                                <th width="200">Tin tuyển dụng</th>
+                                <th width="150">Vòng tuyển dụng</th>
+                                <th width="150">Đánh giá</th>
+                                <th width="150">Ngày ứng tuyển</th>
+                                <th width="150">Trình độ đào tạo</th>
+                                <th width="200">Nơi đào tạo</th>
+                                <th width="200">Chuyên ngành</th>
+                                <th width="200">Nơi làm việc gần đây</th>
+                                <th width="200">Nhân sự khai thác</th>
+                                <th width="200">Đơn vị sử dụng</th>
+                                <th width="180">Phù hợp với chân dung</th>
+                                <th width="150">Khu vực</th>
+                                <th width="200">Người giới thiệu</th>
+                                <th width="200">Thông tin tiếp nhận</th>
+                                <th width="180">Thuộc kho tiềm năng</th>
+                                <th width="100">Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody id="candidateTableBody">
+                            <!-- Data will be rendered here by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-wrapper display-flex align-items-center justify-content-space-between">
+                    <div class="pagination-info">
+                        Tổng: <strong id="totalRecords">0</strong> bản ghi
+                    </div>
+                    <div class="pagination-controls display-flex align-items-center gap-md">
+                        <span>Số bản ghi/trang</span>
+                        <select id="pageSize" class="page-size-select">
+                            <option value="10">10</option>
+                            <option value="25" selected>25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                        </select>
+                        <span id="pageInfo">1 - 25  bản ghi</span>
+                        <div class="pagination-buttons display-flex gap-sm">
+                            <button class="btn-pagination" id="btnPrevPage" title="Trang trước">
+                                <i class="icon icon-prev-page"></i>
+                            </button>
+                            <button class="btn-pagination" id="btnNextPage" title="Trang sau">
+                                <i class="icon icon-next-page"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Popup Them/Sua ung vien -->
+    <div class="popup-overlay" id="candidatePopup">
+        <div class="popup-container">
+            <div class="popup-header display-flex align-items-center justify-content-space-between">
+                <h2 class="popup-title" id="popupTitle">Thêm ứng viên</h2>
+                <button class="btn-close" id="btnClosePopup">
+                    <i class="icon-default icon-close"></i>
+                </button>
+            </div>
+            <div class="popup-body">
+                <form id="candidateForm">
+                    <!-- Upload CV Section -->
+                    <div class="form-section upload-section">
+                        <div class="upload-area" id="uploadArea">
+                            <p class="upload-link">Kéo thả hoặc bấm vào đây để tải CV lên</p>
+                            <p class="upload-hint">Chấp nhận file .doc, .docx, .pdf, .jpg, .jpeg, .png (Dung lượng < hơn 15 Mb)</p>
+                            <input type="file" id="cvFile" accept=".doc,.docx,.pdf,.jpg,.jpeg,.png" hidden>
+                        </div>
+                    </div>
+
+                    <!-- Avatar and Form Fields -->
+                    <div class="form-group-with-avatar">
+                        <div class="avatar-placeholder" id="avatarPlaceholder">
+                            <span>Ảnh</span>
+                            <input type="file" id="avatarFile" accept=".jpg,.jpeg,.png" hidden>
+                        </div>
+                        <div class="form-fields-container">
+                            <!-- Họ và tên -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label required">Họ và tên</label>
+                                    <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Nhập họ và tên">
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+
+                            <!-- Ngay sinh & Gioi tinh -->
+                            <div class="form-row display-flex gap-lg">
+                                <div class="form-group flex-1">
+                                    <label class="form-label">Ngày sinh <span class="label-hint">Ngày tháng năm</span></label>
+                                    <input type="date" id="dateOfBirth" name="dateOfBirth" class="form-input">
+                                </div>
+                                <div class="form-group flex-1">
+                                    <label class="form-label">Giới tính</label>
+                                    <select id="gender" name="gender" class="form-select">
+                                        <option value="">Chọn giới tính</option>
+                                        <option value="Nam">Nam</option>
+                                        <option value="Nữ">Nữ</option>
+                                        <option value="Khác">Khác</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Khu vực -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Khu vực</label>
+                                    <div class="input-with-btn">
+                                        <select id="location" name="location" class="form-select">
+                                            <option value="">Chọn giá trị</option>
+                                            <option value="Hà Nội">Hà Nội</option>
+                                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                            <option value="Đà Nẵng">Đà Nẵng</option>
+                                        </select>
+                                        <button type="button" class="btn-more">
+                                            <i class="icon icon-more"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- So dien thoai & Email -->
+                            <div class="form-row display-flex gap-lg">
+                                <div class="form-group flex-1">
+                                    <label class="form-label">Số điện thoại</label>
+                                    <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" placeholder="Nhập số điện thoại">
+                                    <span class="error-message"></span>
+                                </div>
+                                <div class="form-group flex-1">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="Nhập Email">
+                                    <span class="error-message"></span>
+                                </div>
+                            </div>
+
+                            <!-- Dia chi -->
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Địa chỉ</label>
+                                    <input type="text" id="address" name="address" class="form-input" placeholder="Nhập địa chỉ">
+                                </div>
+                            </div>
+
+                    <!-- HOC VAN Section -->
+                    <div class="form-section-title">HỌC VẤN</div>
+
+                    <div id="educationList">
+                        <!-- Education items will be added here -->
+                        <div class="education-item">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Trình độ đào tạo</label>
+                                    <div class="input-with-actions">
+                                        <input type="text" class="form-input education-level" list="educationLevels" placeholder="Nhập trình độ đào tạo">
+                                        <datalist id="educationLevels">
+                                            <option value="Trung hoc">
+                                            <option value="Trung cap">
+                                            <option value="Cao dang">
+                                            <option value="Dai hoc">
+                                            <option value="Thac si">
+                                            <option value="Tien si">
+                                        </datalist>
+                                        <button type="button" class="btn-action-add" onclick="Popup.showDatalistDropdown(this)">
+                                            <i class="icon icon-add"></i>
+                                        </button>
+                                        <button type="button" class="btn-action-expand" onclick="Popup.toggleEducationExpand(this)">
+                                            <i class="icon icon-arrow-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Nơi đào tạo</label>
+                                    <div class="input-with-actions">
+                                        <input type="text" class="form-input education-school" list="schools" placeholder="Nhập nơi đào tạo">
+                                        <datalist id="schools">
+                                            <option value="Dai hoc Bach Khoa Ha Noi">
+                                            <option value="Dai hoc Quoc Gia Ha Noi">
+                                            <option value="Dai hoc Kinh Te Quoc Dan">
+                                            <option value="Dai hoc FPT">
+                                        </datalist>
+                                        <button type="button" class="btn-action-add" onclick="Popup.showDatalistDropdown(this)">
+                                            <i class="icon icon-add"></i>
+                                        </button>
+                                        <button type="button" class="btn-action-expand" onclick="Popup.toggleEducationExpand(this)">
+                                            <i class="icon icon-arrow-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label">Chuyên ngành</label>
+                                    <div class="input-with-actions">
+                                        <input type="text" class="form-input education-major" list="majors" placeholder="Man dan">
+                                        <datalist id="majors">
+                                            <option value="Cong nghe thong tin">
+                                            <option value="Khoa hoc may tinh">
+                                            <option value="He thong thong tin">
+                                            <option value="Mang may tinh">
+                                        </datalist>
+                                        <button type="button" class="btn-action-add" onclick="Popup.showDatalistDropdown(this)">
+                                            <i class="icon icon-add"></i>
+                                        </button>
+                                        <button type="button" class="btn-action-expand" onclick="Popup.toggleEducationExpand(this)">
+                                            <i class="icon icon-arrow-down"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="button" class="btn-link" id="btnAddEducation"><i class="icon icon-add"></i> Thêm học vấn</button>
+                    </div>
+
+                    <!-- Ngày ứng tuyển & Nguồn ứng viên -->
+                    <div class="form-row display-flex gap-lg">
+                        <div class="form-group flex-1">
+                            <label class="form-label required">Ngày ứng tuyển</label>
+                            <input type="date" id="applicationDate" name="applicationDate" class="form-input">
+                        </div>
+                        <div class="form-group flex-1">
+                            <label class="form-label">Nguồn ứng viên</label>
+                            <select id="source" name="source" class="form-select">
+                                <option value="">Chọn nguồn ứng viên</option>
+                                <option value="Website">Website</option>
+                                <option value="LinkedIn">LinkedIn</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="Gioi thieu">Gioi thieu</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Nhân sự khai thác & Cong tac vien -->
+                    <div class="form-row display-flex gap-lg">
+                        <div class="form-group flex-1">
+                            <label class="form-label">Nhân sự khai thác</label>
+                            <select id="recruiter" name="recruiter" class="form-select">
+                                <option value="">Dinh Nga QTHT N...</option>
+                                <option value="Nguyen Van A">Nguyen Van A</option>
+                                <option value="Tran Thi B">Tran Thi B</option>
+                            </select>
+                        </div>
+                        <div class="form-group flex-1">
+                            <label class="form-label">Cộng tác viên</label>
+                            <select id="collaborator" name="collaborator" class="form-select">
+                                <option value="">Chọn cộng tác viên</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Them nhanh nguoi tham chieu -->
+                    <div class="form-row">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="addReference">
+                            <span>Thêm người tham chiếu vào kho ứng viên</span>
+                        </label>
+                    </div>
+
+                    <!-- Search dropdown nguoi gioi thieu -->
+                    <div class="form-row">
+                        <div class="referrer-search-wrapper">
+                            <button type="button" class="btn-link" id="btnShowReferrerSearch"><i class="icon icon-add"></i> Thêm người giới thiệu</button>
+
+                            <div class="referrer-dropdown" id="referrerDropdown">
+                                <input type="text" class="form-input" id="referrerSearchInput" placeholder="Tìm kiếm thành viên">
+                                <div class="referrer-dropdown-list" id="referrerDropdownList">
+                                    <!-- List will be populated by JS -->
+                                </div>
+                                <button type="button" class="btn-link" id="btnAddNewReferrer">+ Thêm mới</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Danh sách người giới thiệu đã chọn -->
+                    <div id="referrerSelectedList" class="referrer-list">
+                        <!-- Selected referrer items will be added here -->
+                    </div>
+
+                    <!-- Noi lam viec gan day -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Nơi làm việc gần đây</label>
+                            <input type="text" id="recentWorkplace" name="recentWorkplace" class="form-input" placeholder="Nhập nơi làm việc gần đây">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <button type="button" class="btn-link" id="btnAddExperience"><i class="icon icon-add"></i> Thêm kinh nghiệm làm việc</button>
+                    </div>
+
+                    <!-- Kinh nghiem lam viec mac dinh -->
+                    <div class="experience-item experience-default">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Nơi làm việc</label>
+                                <input type="text" id="defaultWorkplace" class="form-input" placeholder="Nhập nơi làm việc">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Thời gian</label>
+                                <div class="time-range">
+                                    <input type="text" id="defaultWorkStartDate" class="form-input" placeholder="MM/yyyy">
+                                    <span class="time-range-separator">-</span>
+                                    <input type="text" id="defaultWorkEndDate" class="form-input" placeholder="MM/yyyy">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Vị trí công việc</label>
+                                <input type="text" id="defaultJobPosition" class="form-input" placeholder="Nhập vị trí công việc">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label class="form-label">Mô tả công việc</label>
+                                <textarea id="defaultJobDescription" class="form-textarea" rows="3" placeholder="Nhập mô tả công việc"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kinh nghiem lam viec list (cac muc them sau) -->
+                    <div id="experienceList">
+                        <!-- Experience items will be added here -->
+                    </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-footer display-flex justify-content-end gap-md">
+                <button type="button" class="btn btn-secondary" id="btnCancel">Hủy</button>
+                <button type="button" class="btn btn-primary" id="btnSave">Lưu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Thêm giá trị học vấn (Trình độ, Trường, Chuyên ngành) -->
+    <div class="popup-overlay" id="educationValuePopup">
+        <div class="popup-container popup-small">
+            <div class="popup-header display-flex align-items-center justify-content-space-between">
+                <h2 class="popup-title" id="educationValueTitle">Thêm nơi đào tạo</h2>
+                <button class="btn-close" id="btnCloseEducationValue">
+                    <i class="icon-default icon-close"></i>
+                </button>
+            </div>
+            <div class="popup-body">
+                <form id="educationValueForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label required" id="educationValueLabel">Tên nơi đào tạo</label>
+                            <input type="text" id="educationValueInput" class="form-input" placeholder="Tên nơi đào tạo">
+                            <span class="error-message" id="educationValueError">Không được để trống</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-footer display-flex justify-content-end gap-md">
+                <button type="button" class="btn btn-secondary" id="btnCancelEducationValue">Hủy</button>
+                <button type="button" class="btn btn-primary" id="btnSaveEducationValue">Lưu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Them nguoi gioi thieu -->
+    <div class="popup-overlay" id="referrerPopup">
+        <div class="popup-container popup-small">
+            <div class="popup-header display-flex align-items-center justify-content-space-between">
+                <h2 class="popup-title">Nhập người giới thiệu</h2>
+                <button class="btn-close" id="btnCloseReferrer">
+                    <i class="icon-default icon-close"></i>
+                </button>
+            </div>
+            <div class="popup-body">
+                <form id="referrerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label required">Họ và tên</label>
+                            <input type="text" id="referrerName" class="form-input" placeholder="Nhập tên người giới thiệu">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label required">Phòng ban</label>
+                            <select id="referrerDepartment" class="form-select">
+                                <option value="">Chọn phòng ban...</option>
+                                <option value="Phong Ky Thuat">Phòng kỹ thuật</option>
+                                <option value="Phong Kinh Doanh">Phòng Kinh Doanh</option>
+                                <option value="Phong Nhan Su">Phòng Kinh Doanh</option>
+                                <option value="Phong Ke Toan">Phòng Kế Toán</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="popup-footer display-flex justify-content-end gap-md">
+                <button type="button" class="btn btn-secondary" id="btnCancelReferrer">Hủy</button>
+                <button type="button" class="btn btn-primary" id="btnSaveReferrer">Lưu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notification -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- JavaScript -->
+    <script src="./assets/js/utils/constants.js"></script>
+    <script src="./assets/js/data/candidate-data.js"></script>
+    <script src="./assets/js/utils/storage.js"></script>
+    <script src="./assets/js/utils/validator.js"></script>
+    <script src="./assets/js/utils/helpers.js"></script>
+    <script src="./assets/js/components/toast.js"></script>
+    <script src="./assets/js/components/education-value-popup.js"></script>
+    <script src="./assets/js/components/referrer-popup.js"></script>
+    <script src="./assets/js/components/column-settings.js"></script>
+    <script src="./assets/js/components/activity-popup.js"></script>
+    <script src="./assets/js/components/export.js"></script>
+    <script src="./assets/js/components/popup.js"></script>
+    <script src="./assets/js/components/table.js"></script>
+    <script src="./assets/js/components/pagination.js"></script>
+    <script src="./assets/js/components/search.js"></script>
+    <script src="./assets/js/modules/candidate.js"></script>
+    <script src="./assets/js/modules/sidebar.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

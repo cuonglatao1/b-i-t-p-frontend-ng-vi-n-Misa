@@ -1,0 +1,374 @@
+/* base icon */
+.icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    background-color: currentColor;
+    mask-image: url("../ICONS/ICON.svg");
+    mask-repeat: no-repeat;
+    mask-size: auto ; /* Icon tu dong fit vao khung */
+}
+
+/* icon-default: dung cho cac icon khong dung mask */
+.icon-default{
+    background: url("../ICONS/ICON.svg") no-repeat;
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+}
+
+/* ================= HEADER ================= */
+
+/* 1. logo */
+.icon-logo{
+    width: 54px;
+    height: 54px;
+    background-position: -53px -411px;
+    transform: scale(0.6);
+}
+
+/* 2. website */
+.icon-website{
+    mask-position: 0 -608px;
+    width: 21px;
+    height: 21px;
+}
+
+/* 3. notification */
+.icon-notification{
+    mask-position: -2px -634px;
+    width: 20px;
+    height: 21px;
+}
+
+/* 4. message */
+.icon-message{
+    mask-position: -75px -847px;
+    width: 21px;
+    height: 21px;
+    transform: scale(1.2);
+}
+
+/* ================= SIDEBAR ================= */
+
+/* Tin tuyen dung */
+.icon-recruitment{
+    mask-position: -98px -114px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Ung vien */
+.icon-candidate{
+    mask-position: -25px -114px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Lich */
+.icon-schedule{
+    mask-position: -145px -114px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Kho tiem nang */
+.icon-talent{
+    mask-position: 0px -112px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Chien dich tuyen dung */
+.icon-campaign{
+    mask-position: -73px -633px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Cong viec */
+.icon-job{
+    mask-position: -338px -113px;
+    width: 20px;
+    height: 20px;
+}
+
+/* aiMarketing */
+.icon-marketing{
+    mask-position: -160px -248px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Phong van */
+.icon-interview{
+    mask-position: -72px -845px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Bao cao */
+.icon-report{
+    mask-position: -72px -113px;
+    width: 18px;
+    height: 18px;
+}
+
+/* Khac */
+.icon-other{
+    mask-position: -359px -614px;
+    width: 20px;
+    height: 20px;
+}
+
+/* ================= CONTROL ================= */
+
+/* arrow left (collapse sidebar) */
+.icon-arrow-left{
+    mask-position: -199px -141px;
+    width: 9px;
+    height: 14px;
+}
+
+/* arrow right */
+.icon-arrow-right{
+    mask-position: -223px -141px;
+    width: 9px;
+    height: 14px;
+}
+
+/* ================= PAGE HEADER ================= */
+
+/* add */
+.icon-add{
+    mask-position: -20px -656px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 2px;
+    margin-top: -2px;
+}
+
+/* ================= FILTER ================= */
+
+/* AI search candidate - composite icon */
+.icon-ai-search-candidate{
+    width: 28px;
+    height: 28px;
+    position: relative;
+    display: inline-block;
+    background-color: transparent !important;
+    mask-image: none !important;
+    background: url(../images/ai-search-candidate.svg) no-repeat center;
+    background-size: contain;
+}
+
+.icon-ai-search-candidate::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background: url(../images/ai-search-candidate-start.svg) no-repeat center;
+    background-size: contain;
+}
+
+/* search - fallback */
+.icon-search{
+    mask-position: -2px -658px;
+    width: 20px;
+    height: 20px;
+}
+
+/* header search */
+.icon-header-search{
+    width: 18px;
+    height: 18px;
+    mask-position: -2px -658px;
+    padding: 8px;
+    background-color: #999999;
+}
+
+/* knowledge sidebar */
+.icon-knowlege{
+    width: 20px;
+    height: 20px;
+    background: url("../images/icon-knowlege.svg") no-repeat center !important;
+    background-color: transparent !important;
+    background-size: contain;
+    mask-image: none !important;
+}
+
+/* filter */
+.icon-filter{
+    mask-position: -40px -656px;
+    width: 20px;
+    height: 20px;
+}
+
+/* export */
+.icon-export{
+    mask-position: -60px -658px;
+    width: 20px;
+    height: 20px;
+    transform: scale(1.1);
+}
+
+/* refresh */
+.icon-settings{
+    mask-position: -26px -610px;
+    width: 30x;
+    height: 30px;
+}
+
+/* activity */
+.icon-activity{
+    mask-position: 0px -844px;
+    width: 24px;
+    height: 24px;
+}
+
+/* calendar */
+.icon-calendar{
+    mask-position: -145px -114px;
+    width: 16px;
+    height: 16px;
+}
+
+
+/* ================= PAGINATION ================= */
+
+/* first page */
+.icon-first-page{
+    mask-position: -322px -3px;
+    width: 13px;
+    height: 9px;
+}
+
+/* arrow down */
+.icon-arrow-down{
+    mask-position: -32px -47px;
+    width: 16px;
+    height: 16px;
+}
+
+/* prev page */
+.icon-prev-page{
+    background: url("../ICONS/ICON.svg") no-repeat -62px -700px !important;
+    width: 7px;
+    height: 12px;
+    mask-image: none !important;
+}
+
+/* next page */
+.icon-next-page{
+    background: url("../ICONS/ICON.svg") no-repeat -47px -700px !important;
+    width: 7px;
+    height: 12px;
+    mask-image: none !important;
+}
+
+/* last page */
+.icon-last-page{
+    mask-position: -337px -3px;
+    width: 13px;
+    height: 9px;
+}
+
+/* header icons - using SVG images */
+.icon-notification-version{
+    background: url("../images/icon-notification-version.svg") no-repeat center !important;
+    background-color: transparent !important;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    mask-image: none !important;
+}
+
+.icon-store{
+    background: url("../images/icon-store.svg") no-repeat center !important;
+    background-color: transparent !important;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    mask-image: none !important;
+}
+
+.icon-invite{
+    background: url("../images/icon-invite.svg") no-repeat center !important;
+    background-color: transparent !important;
+    background-size: contain;
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+    mask-image: none !important;
+}
+
+.icon-help{
+    background: url("../images/icon-help.svg") no-repeat center !important;
+    background-color: transparent !important;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    mask-image: none !important;
+}
+
+.icon-more-menu{
+    background: url("../images/icon-more-menu.svg") no-repeat center !important;
+    background-color: transparent !important;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    mask-image: none !important;
+}
+
+.icon-knowledge-header{
+    background: url("../images/icon-knowlege.svg") no-repeat center !important;
+    background-color: transparent !important;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    mask-image: none !important;
+}
+
+.icon-message-box{
+    background: url("../images/icon-message-box.svg") no-repeat center !important;
+    background-color: transparent !important;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    mask-image: none !important;
+}
+
+/* ================= POPUP ================= */
+
+/* close */
+.icon-close{
+    background-position: -73px -136px;
+    width: 26px;
+    height: 26px;
+    color: rgb(102, 102, 102) !important;
+}
+
+/* upload */
+.icon-upload{
+    mask-position: -196px -116px;
+    width: 16px;
+    height: 16px;
+}
+
+/* more */
+.icon-more{
+    mask-position: -359px -614px;
+    width: 16px;
+    height: 16px;
+}
+
+/* drag-handle */
+.icon-drag-handle{
+    mask-position: -250px -660px;
+    width: 20px;
+    height: 20px;
+}
